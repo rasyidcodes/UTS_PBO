@@ -69,7 +69,7 @@ public class ProgramStudi {
         String bidangMhs = mahasiswa.getBidang();
         String keahlianDosen = lecturer.getKeahlian();
 
-        if (bidangMhs == keahlianDosen){
+        if (Objects.equals(bidangMhs, keahlianDosen)){
             if (lecturer.getKuota() > 0){
                 lecturer.addMhsBimbinganToDosen(mahasiswa);
                 lecturer.setKuota(lecturer.getKuota() - 1);

@@ -9,7 +9,7 @@ public class Main {
         buDivi.tambahTopik("Natural Language Generation");
         buDivi.tambahTopik("Speech Recognition");
 
-        Lecturer buRochana = new Lecturer("R1", "Bu Rochana", "data mining");
+        Lecturer buRochana = new Lecturer("R1", "Bu Rochana", "Data Mining");
         Lecturer pakDinar = new Lecturer("D2", "Pak Dinar", "Machine Learning");
         Lecturer buReta = new Lecturer("M1", "Bu Margareta", "hci");
 

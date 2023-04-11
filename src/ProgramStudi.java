@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Objects;
 
 public class ProgramStudi {
 
@@ -38,10 +39,12 @@ public class ProgramStudi {
         String ketertarikanMhs = mahasiswa.getBidang();
 
 
+
         boolean found = false;
         for(int i = 0; i < daftarDosen.size(); i++){
+            String keahlianDosen = daftarDosen.get(i).getKeahlian().toLowerCase();
 
-            if (ketertarikanMhs == daftarDosen.get(i).getKeahlian().toLowerCase()){
+            if (Objects.equals(ketertarikanMhs, keahlianDosen)){
                 System.out.println(daftarDosen.get(i).getName());
                 found = true;
             }
